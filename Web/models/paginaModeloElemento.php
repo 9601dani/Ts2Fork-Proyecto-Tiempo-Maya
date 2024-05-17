@@ -17,7 +17,7 @@ $informacion = $conn->query("SELECT htmlCodigo FROM tiempomaya.pagina WHERE nomb
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="calc">
 
 <head>
 	<meta charset="utf-8">

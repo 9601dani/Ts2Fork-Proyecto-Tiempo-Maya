@@ -63,3 +63,7 @@ imgs.forEach((img) =>
 if (nahual) {
 	setInterval(setRotation, 1000);
 }
+
+
+
+  

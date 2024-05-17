@@ -138,4 +138,5 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempomaya.periodo order by orde
 			$('#inicioContainer').removeClass('iniciofixed');
 		}
 	}
+	src = ".../js/animation.js";
 </script>

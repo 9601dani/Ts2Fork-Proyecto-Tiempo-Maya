@@ -1,6 +1,7 @@
 <?php session_start(); ?>
 <?php
-
+$hora = date("G");
+$fondoInicial = "fondo" . $hora . ".svg";
 $conn = include '../conexion/conexion.php';
 $pagina = $_GET['pagina'];
 $informacion = $conn->query("SELECT htmlCodigo,seccion,nombre FROM tiempomaya.pagina WHERE categoria='" . $pagina . "' order by orden;");
@@ -12,9 +13,17 @@ $elementos = $conn->query("SELECT nombre FROM tiempomaya.pagina WHERE categoria=
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="nav_1">
 
 <head>
+	<link rel="preload" href="../img/fondo/<?php echo $fondoInicial; ?>" as="image">
+	<style>
+		#inicio {
+			background-image: url('../img/fondo/<?php echo $fondoInicial; ?>');
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
 	<meta charset="utf-8">
 	<link rel="icon" href="../img/piramide-maya.png">
 	<title>Tiempo Maya - <?php echo $pagina ?></title>
@@ -77,7 +86,6 @@ $elementos = $conn->query("SELECT nombre FROM tiempomaya.pagina WHERE categoria=
 
 	<?php include "../blocks/bloquesJs.html" ?>
 	<script src="../js/animation.js"></script>
-
 </body>
 
 </html>

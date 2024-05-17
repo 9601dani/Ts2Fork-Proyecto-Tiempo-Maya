@@ -1,6 +1,7 @@
 <?php
 $conn = include "conexion/conexion.php";
-
+$hora = date("H");
+$fondoInicial = "fondo" . $hora . ".svg";
 if (isset($_GET['fecha'])) {
 	$fecha_consultar = $_GET['fecha'];
 } else {
@@ -23,6 +24,14 @@ $img2 = strtolower(str_replace("'", "", preg_replace("/([\']+|\w+) (\d+)/", '${1
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" href="img/piramide-maya.png">
+	<link rel="preload" href="../img/fondo/<?php echo $fondoInicial; ?>" as="image">
+	<style>
+		#inicio {
+			background-image: url('../img/fondo/<?php echo $fondoInicial; ?>');
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
 	<title>Tiempo Maya</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<?php include "blocks/bloquesCss.html" ?>
@@ -32,7 +41,7 @@ $img2 = strtolower(str_replace("'", "", preg_replace("/([\']+|\w+) (\d+)/", '${1
 	<link rel="stylesheet" href="css/index.css?v=<?php echo (rand()); ?>" />
 </head>
 
-<body>
+<body id="inicio">
 
 	<?php include "NavBar.php" ?>
 	<div>
@@ -43,15 +52,15 @@ $img2 = strtolower(str_replace("'", "", preg_replace("/([\']+|\w+) (\d+)/", '${1
 						<h1><br><br>Bienvenido al Tiempo Maya</h1>
 					</div>
 				</div>
-
+				
 				<div class="row my-4">
-					<div class="col">
+					<div id="imagen_haab" class="col">
 						<?php
 							echo "<img src='img/uinal/$img1.svg' alt='imagen de $img1' class='index-img' />";
 							echo "<h4 class='text-white text-center mt-4 info'>$haab</h4>";
 						?>
 					</div>
-					<div class="col">
+					<div id="imagen_cholquij" class="col">
 						<?php
 							echo "<img src='img/nahual/$img2.png' alt='imagen de $img2' class='index-img' />";
 							echo "<h4 class='text-white text-center mt-4 info'>$cholquij</h4>";

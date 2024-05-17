@@ -1,5 +1,7 @@
 <?php session_start(); ?>
 <?php
+$hora = date("G");
+$fondoInicial = "fondo" . $hora . ".svg";
 $conn = include "conexion/conexion.php";
 
 if (isset($_GET['fecha'])) {
@@ -9,6 +11,8 @@ if (isset($_GET['fecha'])) {
 	$fecha_consultar = date("Y-m-d");
 }
 
+
+
 $nahual = include 'backend/buscar/conseguir_nahual_nombre.php';
 $energia = include 'backend/buscar/conseguir_energia_numero.php';
 $haab = include 'backend/buscar/conseguir_uinal_nombre.php';
@@ -17,11 +21,19 @@ $cholquij = $nahual . " " . strval($energia);
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="nav_2">
 
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" href="img/piramide-maya.png">
+	<link rel="preload" href="../img/fondo/<?php echo $fondoInicial; ?>" as="image">
+	<style>
+		#inicio {
+			background-image: url('../img/fondo/<?php echo $fondoInicial; ?>');
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
 	<title>Tiempo Maya - Calculadora de Mayas</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<?php include "blocks/bloquesCss.html" ?>
@@ -30,7 +42,6 @@ $cholquij = $nahual . " " . strval($energia);
 </head>
 
 <body>
-
 	<?php include "NavBar.php" ?>
 	<div>
 		<section id="inicio">
@@ -80,7 +91,5 @@ $cholquij = $nahual . " " . strval($energia);
 
 
 	<?php include "blocks/bloquesJs1.html" ?>
-
 </body>
-
 </html>
