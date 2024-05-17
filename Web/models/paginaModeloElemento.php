@@ -1,7 +1,8 @@
 <?php
 
 use function PHPSTORM_META\type;
-
+$hora = date("G");
+$fondoInicial = "fondo" . $hora . ".svg";
 session_start(); ?>
 <?php
 
@@ -22,6 +23,14 @@ $informacion = $conn->query("SELECT htmlCodigo FROM tiempomaya.pagina WHERE nomb
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" href="../img/piramide-maya.png">
+	<link rel="preload" href="../img/fondo/<?php echo $fondoInicial; ?>" as="image">
+	<style>
+		#inicio {
+			background-image: url('../img/fondo/<?php echo $fondoInicial; ?>');
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
 	<title>Tiempo Maya - <?php echo $tabla; ?></title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<?php include "../blocks/bloquesCss.html" ?>
