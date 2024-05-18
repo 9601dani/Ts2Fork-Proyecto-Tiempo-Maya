@@ -21,7 +21,7 @@ $cholquij = $nahual . " " . strval($energia);
 
 ?>
 <!DOCTYPE html>
-<html lang="en" id="nav_2">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -39,6 +39,8 @@ $cholquij = $nahual . " " . strval($energia);
 	<?php include "blocks/bloquesCss.html" ?>
 	<link rel="stylesheet" href="css/estilo.css?v=<?php echo (rand()); ?>" />
 	<link rel="stylesheet" href="css/calculadora.css?v=<?php echo (rand()); ?>" />
+	<link rel="stylesheet" href="css/animation.css" />
+	
 </head>
 
 <body>
@@ -91,5 +93,6 @@ $cholquij = $nahual . " " . strval($energia);
 
 
 	<?php include "blocks/bloquesJs1.html" ?>
+	<script src="js/animation.js"></script>
 </body>
 </html>

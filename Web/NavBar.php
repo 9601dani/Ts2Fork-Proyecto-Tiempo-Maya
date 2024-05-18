@@ -11,7 +11,6 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempomaya.periodo order by orde
 ?>
 <?php include "mensaje.php"; ?>
 
-<html id="calc">
 <header id="header">
 	<div class="container">
 		<nav class="navbar navbar-expand-lg" id="nav-menu-container">
@@ -130,4 +129,3 @@ $periodosNav = $conn->query("SELECT nombre FROM tiempomaya.periodo order by orde
 		relleno = !relleno
 	}
 </script>
-</html>

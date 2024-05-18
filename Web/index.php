@@ -1,6 +1,6 @@
 <?php
 $conn = include "conexion/conexion.php";
-$hora = date("H");
+$hora = date("G");
 $fondoInicial = "fondo" . $hora . ".svg";
 if (isset($_GET['fecha'])) {
 	$fecha_consultar = $_GET['fecha'];
