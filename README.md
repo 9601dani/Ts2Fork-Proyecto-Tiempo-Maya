@@ -2,7 +2,11 @@
 Proyecto Maya, donde se podrá aprender mucho sobre la cosmovisión maya, esto consta de 2 plataformas para usar y es el de web y escritorio
 
 #Despliegue plataforma web para hacer contribuciones
-![PHP](https://www.php.net/images/logos/php-logo.svg) ![XAMPP](https://www.apachefriends.org/images/xampp-logo-ac49aefb.svg) ![Git](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png)
+<p align="center">
+  <img src="https://www.php.net/images/logos/php-logo.svg" alt="PHP" width="50"/>
+  <img src="https://www.apachefriends.org/images/xampp-logo-ac49aefb.svg" alt="XAMPP" width="50"/>
+  <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" alt="Git" width="50"/>
+</p>
 
 ## Requisitos Previos
 Antes de comenzar con el despliegue del proyecto, asegúrate de tener instalados los siguientes componentes en tu sistema:
