@@ -9,11 +9,31 @@ Proyecto Maya, donde se podrá aprender mucho sobre la cosmovisión maya, esto c
 </p>
 
 ## Requisitos Previos
-Antes de comenzar con el despliegue del proyecto, asegúrate de tener instalados los siguientes componentes en tu sistema:
+Antes de comenzar con el despliegue del proyecto, asegúrarse de tener instalados los siguientes componentes en su sistema:
 
-1. **XAMPP para Linux**: Puedes descargar XAMPP desde su [sitio oficial](https://www.apachefriends.org/es/index.html).
-2. **Git**: Para clonar el repositorio del proyecto. Puedes instalar Git siguiendo las instrucciones en su [sitio oficial](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-
+1. **XAMPP para Linux**: Puede descargar XAMPP desde su [sitio oficial](https://www.apachefriends.org/es/index.html).
+2. **Git**: Para clonar el repositorio del proyecto. Puede instalar Git siguiendo las instrucciones en su [sitio oficial](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+3. **PHP**: Php es el lenguaje de programación utilizado para este proyecto
+      ### 1. Instalar PHP
+      
+      1. Abre una terminal.
+      2. Actualiza el índice de paquetes:
+      
+          ```bash
+          sudo apt update
+          ```
+      
+      3. Instala PHP:
+      
+          ```bash
+          sudo apt install php
+          ```
+      
+      4. Verifica la instalación:
+      
+          ```bash
+          php -v
+          ```
 ## Pasos para Desplegar el Proyecto
 
 Sigue estos pasos para desplegar el proyecto en entorno local:
