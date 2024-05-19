@@ -3,8 +3,8 @@ Proyecto Maya, donde se podrá aprender mucho sobre la cosmovisión maya, esto c
 
 #Despliegue plataforma web para hacer contribuciones
 <p align="center">
-  <img src="https://www.php.net/images/logos/php-logo.svg" alt="PHP" width="50"/>
-  <img src="https://www.apachefriends.org/images/xampp-logo-ac49aefb.svg" alt="XAMPP" width="50"/>
+  <img src="https://www.php.net/images/logos/php-logo.svg" alt="PHP" width="50" style="filter: invert(100%);"/>
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fsoftfamed.com%2Fwp-content%2Fuploads%2F2020%2F10%2FXAMPP.jpg&f=1&nofb=1&ipt=af2b26d6b0f3d0dde2a2d7f60a6d8a7beca5333ca80b2c8660997aad86010ca3&ipo=images" alt="XAMPP" width="50"/>
   <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" alt="Git" width="50"/>
 </p>
 
