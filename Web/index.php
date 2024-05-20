@@ -56,13 +56,13 @@ $img2 = strtolower(str_replace("'", "", preg_replace("/([\']+|\w+) (\d+)/", '${1
 				<div class="row my-4">
 					<div id="imagen_haab" class="col">
 						<?php
-							echo "<img src='img/uinal/$img1.svg' alt='imagen de $img1' class='index-img' />";
+							echo "<img src='img/uinal/$img1.svg' alt='imagen de $img1' class='index-img filter' />";
 							echo "<h4 class='text-white text-center mt-4 info'>$haab</h4>";
 						?>
 					</div>
 					<div id="imagen_cholquij" class="col">
 						<?php
-							echo "<img src='img/nahual/$img2.png' alt='imagen de $img2' class='index-img' />";
+							echo "<img src='img/nahual/$img2.png' alt='imagen de $img2' class='index-img filter' />";
 							echo "<h4 class='text-white text-center mt-4 info'>$cholquij</h4>";
 						?>
 					</div>

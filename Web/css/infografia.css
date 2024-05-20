@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#infografia {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#infografia h1 {
+    text-align: center;
+}
+
+#subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#info {
+    list-style: none;
+    padding: 0;
+}
+
+#info li {
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -69,18 +69,21 @@ div.data.active {
 }
 
 img.index-img {
-	width: 200px;
-	height: 200px;
-	background-color: transparent;
-	filter: invert(100%);
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+}
+
+img.index-img.filter {
+    filter: invert(100%);
 }
 
 .info {
-	background: rgba(63, 64, 66, 0);
+    background: rgba(63, 64, 66, 0);
 }
 
 img.index-img.active {
-	box-shadow: rgba(63, 64, 66, 0.7) 0px 8px 24px;
-	transform: translateY(-0.50em);
-	transition: 0.3s;
+    box-shadow: rgba(63, 64, 66, 0.7) 0px 8px 24px;
+    transform: translateY(-0.50em);
+    transition: 0.3s;
 }
